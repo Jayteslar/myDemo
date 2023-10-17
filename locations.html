@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>James' Pizza Co. Restaurant Locations</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta name="description" content="Locations of all James' Pizza Co. Restaurants in New York City">
+
+    <meta name="keywords" content="locations,pizza restaurants,map,take-out,new york pizza,james' pizza,james' new york">
+
+    <meta name="author" content="James Olamoyegun">
+</head>
+<body>
+    <!-- Page Container -->
+    <div id="container">
+        <!-- Header -->
+        <header>
+            <!-- Logo -->
+            <div id="logo">
+                <a href="index.html" id="line"><h1>James' Pizza Co.</h1></a>
+            </div>
+
+            <!-- Navigation -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html" title="James' Pizza Co.">Home</a>
+                    </li>
+                    <li>
+                        <a href="bookings.html" title="Make a Booking">Bookings</a>
+                    </li>
+                    <li>
+                        <a href="about.html" title="Find out more about James' Pizza Co.">About</a>
+                    </li>
+                    <li>
+                        <a href="news.html" title="Latest news about James' Pizza Co.">News</a>
+                    </li>
+                    <li>
+                        <a href="menu.html" title="The restaurant menu for James' Pizza Co.">Menu</a>
+                    </li>
+                    <li>
+                        <a href="locations.html" title="James' Pizza Co. Restaurant Locations" class="active">Locations</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <div>
+            <!-- Page Text -->
+            <section id="page-text">
+                <h1>Locations</h1>
+                <meta id="company-name" itemprop="name" content="James' Pizza Co."/>
+                <!-- Location 1 -->
+                <section id="location1" itemscope itemtype="http://schema.org/LocalBusiness" itemref="company-name">
+                    <h1 itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                        <span itemprop="streetAddress">310 West 38th Street</span>,
+                        <span itemprop="addressRegion">NY</span>
+                    </h1>
+                    <img src="img/map1.png" alt="James' Pizza at 310 West 38th Street, NY" itemprop="image" />
+                    <p class="location-phone" itemprop="telephone">212-012-3456</p>
+                    <h2>Opening Hours</h2>
+                    <p>
+                        <time itemprop="openingHours" datetime="Mo-Fr 12:00-22:00">Mon-Fri: 12:00 - 22:00</time><br>
+                        <time itemprop="openingHours" datetime="Sa,Su 11:00-23:00">Sat-Sun: 11:00 - 23:00</time>
+                    </p>
+                    <div id="location1distance" style="color: green;"></div>
+                </section>
+                <!-- Location 2 -->
+                <section id="location2" itemscope itemtype="http://schema.org/LocalBusiness" itemref="company-name">
+                    <h1 itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                        <span itemprop="streetAddress">2450 Broadway</span>,
+                        <span itemprop="addressRegion">NY</span>
+                    </h1>
+                    <img src="img/map2.png" alt="James' Pizza at 2450 Broadway, NY" itemprop="image">
+                    <p class="location-phone" itemprop="telephone">212-012-3457</p>
+                    <h2>Opening Hours</h2>
+                    <p>
+                        <time itemprop="openingHours" datetime="Mo-Fr 12:00-22:00">Mon-Fri: 12:00 - 22:00</time><br>
+                        <time itemprop="openingHours" datetime="Sa,Su 11:00-23:00">Sat-Sun: 11:00 - 23:00</time>
+                    </p>
+                    <div id="location2distance" style="color: green;"></div>
+                </section>
+                <!-- Location 3 -->
+                <section id="location3" itemscope itemtype="http://schema.org/LocalBusiness" itemref="company-name">
+                    <h1 itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                        <span itemprop="streetAddress">200 West 44th Street</span>,
+                        <span itemprop="addressRegion">NY</span>
+                    </h1>
+                    <img src="img/map3.png" alt="James' Pizza at 200 West 44th Street, NY" itemprop="image">
+                    <p class="location-phone" itemprop="telephone">212-012-3458</p>
+                    <h2>Opening Hours</h2>
+                    <p>
+                        <time itemprop="openingHours" datetime="Mo-Fr 12:00-22:00">Mon-Fri: 12:00 - 22:00</time><br>
+                        <time itemprop="openingHours" datetime="Sa,Su 11:00-23:00">Sat-Sun: 11:00 - 23:00</time>
+                    </p>
+                    <div id="location3distance" style="color: green;"></div>
+                </section>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <small>&copy; 2023 James' Pizza Co. All Rights Reserved</small>
+            -
+            <a href="sitemap.html" title="Links to all the pages on this website">Sitemap</a>
+        </footer>
+    </div>
+    
+    <!-- JS Inclusion to implement geolocation capability -->
+    <script src="js/geo.js"></script>
+    <script src="js/geolocation.js"></script>
+</body>
+</html>

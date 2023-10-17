@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    
+    <meta name="description" content="The bookings page for James' Pizza Co.">
+
+    <meta name="keywords" content="bookings,reservation">
+
+    <meta name="author" content="James Olamoyegun">
+
+    <title>Bookings - James' Pizza Co.</title>
+</head>
+<body>
+    <!-- Page Container -->
+    <div id="container">
+        <!-- Header -->
+        <header>
+            <!-- Logo -->
+            <div id="logo">
+                <a href="index.html" id="line"><h1>James' Pizza Co.</h1></a>
+            </div>
+
+            <!-- Navigation -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html" title="James' Pizza Co.">Home</a>
+                    </li>
+                    <li>
+                        <a href="bookings.html" title="Make a Booking" class="active">Bookings</a>
+                    </li>
+                    <li>
+                        <a href="about.html" title="Find out more about James' Pizza Co.">About</a>
+                    </li>
+                    <li>
+                        <a href="news.html" title="Latest news about James' Pizza Co.">News</a>
+                    </li>
+                    <li>
+                        <a href="menu.html" title="The restaurant menu for James' Pizza Co.">Menu</a>
+                    </li>
+                    <li>
+                        <a href="locations.html" title="James' Pizza Co. Restaurant Locations">Locations</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <div>
+            <!-- Page Text -->
+            <section id="page-text">
+                <h1>Request a Booking</h1>
+                <p>Please use the form below to submit a booking request. You will then be contacted by a staff member who will confirm your booking.</p>
+                <!-- Booking Form -->
+                <form action="bookcon.html" method="GET" id="bookingsForm">
+                    <p style="color: red;">* Indicates a required field.</p>
+                    <fieldset>
+                        <legend>Contact Details</legend>
+                        <div class="field">
+                            <label for="name">Name*:</label>
+                            <input name="name" id="name" type="text" placeholder="e.g James Olamoyegun" autofocus required maxlength="65" tabindex="1">
+                        </div>
+                        <div class="field">
+                            <label for="phone">Phone*:</label>
+                            <input name="phone" id="phone" type="tel" placeholder="e.g 000-000-0000" required pattern="[0-9]{3}[-][0-9]{3}[-][0-9]{4}" title="Please provide your phone number in the following format: 000-000-0000" tabindex="2" />
+                        </div>
+                        <div class="field">
+                            <label for="email">E-mail*:</label>
+                            <input name="email" id="email" type="email" placeholder="e.g: mailname@example.com" required tabindex="3">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Booking Information</legend>
+                        <div class="field">
+                            <label for="restaurant">Restaurant*:</label>
+                            <select name="restaurant" id="restaurant" required tabindex="4">
+                                <optgroup label="Choose a restaurant">
+                                    <option value="">--Please choose a restaurant--</option>
+                                    <option value="310 West 38th Street, NY" selected>310 West 38th Street, NY</option>
+                                    <option value="2450 Broadway, NY">2450 Broadway, NY</option>
+                                    <option value="200 West 44th Street, NY">200 West 44th Street, NY</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="bookingTime">Booking Time*:</label>
+                            <input name="bookingTime" id="bookingTime" type="datetime-local" required tabindex="5">
+                        </div>
+                        <div class="field">
+                            <label for="guests">Number of Guests*:</label>
+                            <input name="guests" id="guests" type="number" value="2" required min="1" max="12" tabindex="6">
+                        </div>
+                        <div class="field">
+                            <label for="marketing">Please tick this box if you would like to receive special offers from James' Pizza Co.</label>
+                            <input name="marketing" id="marketing" type="checkbox" value="1" tabindex="7">
+                        </div>
+                        <div class="field">
+                            <label for="message">Special Requests (Optional):</label>
+                            <textarea name="message" id="message" cols="50" rows="10" placeholder="Please enter special requests for your reservation..." maxlength="250" tabindex="8"></textarea>
+                        </div>
+                    </fieldset>
+                    <div class="fields">
+                        <button type="submit" style="color: white; background-color: rgb(7, 134, 7);" tabindex="9">Request Booking ✅</button>
+                    </div>
+
+                    <!-- JavaScript Inclusion (***NOT USED FOR NOW***) -->
+                    <div class="fields">
+                        <button type="button" id="jay" style="color: white; background-color: rgb(77, 77, 166);" tabindex="10">TEST FORM</button>
+                    </div>
+                    <script>
+                        var testButton = document.getElementById("jay");
+                        testButton.addEventListener("click", function() {
+                            alert("Yaay, Make a reservation.");
+                        });
+                    </script>
+
+                    <div class="fields">
+                        <button type="reset" style="color: black; background-color: rgb(236, 77, 77);" tabindex="11">RESET FORM</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <small>&copy; 2023 James' Pizza Co. All Rights Reserved.</small>
+            -
+            <a href="sitemap.html" title="Links to all the pages on this website">Sitemap</a>
+        </footer>
+    </div>
+
+    <!-- JS inclusion for the Bookings page (Preloaded data) -->
+    <script src="js/storage.js"></script>
+</body>
+</html>
